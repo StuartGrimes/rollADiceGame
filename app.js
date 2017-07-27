@@ -70,9 +70,7 @@ function nextPlayer() {
 }
 
 function checkForWin(globalScore) {
-    var target = document.querySelector('#target').value;
-    console.log(target);
-    if (globalScore >= target) {
+    if (globalScore >= 100) {
         gamePlaying = false;
         return true;
     } else {
